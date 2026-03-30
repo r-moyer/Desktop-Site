@@ -1,0 +1,153 @@
+
+
+/*start header*/
+.header {
+	display: flex;
+	background-color: green;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.page-title{
+	display: flex;
+	justify-content: center;
+	background: lightpink;
+	color: black;
+	gap: 40px;
+	font-size: 6vw;
+
+}
+
+.nav-bar{
+	display: flex;
+	background: red;
+	color: white;
+	justify-content: center;
+	gap: 3vw;
+	align-self: flex-end;
+	padding: 0.5vw;
+	font-size: 1.5vw;
+}
+
+.home{
+
+}
+
+.about{
+
+}
+
+.shop{
+
+}
+/*end header*/
+
+
+/*start hero*/
+
+.hero{
+display: flex;
+background-color: skyblue;
+color: purple;
+
+}
+
+.hero-copy{
+float: left;
+width: 50vw;
+padding: 4vw;
+
+}
+
+.hero-buttons{
+	display: flex;
+	color: white;
+	justify-content: space-evenly;
+	gap: 15px;
+	align-self: flex-end;
+}
+
+.shop-now{
+background-color: black;
+padding: 5px;
+}
+
+.learn-more{
+background-color: black;
+padding: 5px;
+}
+
+.hero-image{
+float: left;
+background-color: green;
+width: 300px;
+height: 200px;
+padding: 4vw;
+margin: 4vw;
+}
+
+h1{
+	font-size: 4vw;
+}
+
+h4{
+	font-size: 2vw;
+}
+
+/*end hero*/
+
+
+/* start shop home */
+.home-shop{
+display: flex;
+justify-content: center;
+gap: 2vw;
+}
+
+.shop-by{
+display: flex;
+align-self: flex-start;
+background-color: salmon;
+justify-content: center;
+}
+
+.shop-tab{
+display: flex;
+background-color: yellowgreen;
+width: 350px;
+height: 450px;
+justify-content: center;
+align-items: flex-end;
+margin: 1vw;
+}
+
+h2{
+	font-size: 3vw;
+}
+
+h3{
+	font-size: 2vw;
+}
+
+/* end shop home */
+
+/* footer */
+.foot{
+	display: flex;
+	height: 5vw;
+	background-color: lightpink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
