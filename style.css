@@ -1,55 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
 
-/*start header*/
+/* header */
 .header {
-	display: flex;
-	background-color: green;
-	flex-flow: row wrap;
-	justify-content: center;
-	gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3f463a;
+  color: white;
+  padding: 20px 40px;
 }
 
 .page-title{
 	display: flex;
-	justify-content: center;
-	background: lightpink;
-	color: black;
+	justify-content: left;
+	color: white;
 	gap: 40px;
-	font-size: 6vw;
+	font-size: 4vw;
+	padding: 0px;
 
 }
 
 .nav-bar{
 	display: flex;
-	background: red;
 	color: white;
-	justify-content: center;
-	gap: 3vw;
+	justify-content: right;
+	gap: 2vw;
 	align-self: flex-end;
-	padding: 0.5vw;
+	padding: 0px;
 	font-size: 1.5vw;
 }
 
-.home{
-
+a {
+  color: white;
 }
 
-.about{
-
-}
-
-.shop{
-
-}
-/*end header*/
 
 
-/*start hero*/
+
+/* hero */
 
 .hero{
-display: flex;
-background-color: skyblue;
-color: purple;
+  display: flex;
+  align-items: center;
+  height: 500px;
+  background-color: #f4f4f4;
+  padding-left: 60px;
+  color: white;
 
 }
 
@@ -61,22 +63,20 @@ padding: 4vw;
 }
 
 .hero-buttons{
-	display: flex;
-	color: white;
-	justify-content: space-evenly;
-	gap: 15px;
-	align-self: flex-end;
+ display: flex;
+  gap: 10px;
+  margin-top: 15px;
 }
 
-.shop-now{
-background-color: black;
-padding: 5px;
+button{
+  padding: 0.75vw;
+  margin: 0.5vw;
+  border: none;
+  background: #5c6b58;
+  color: white;
+  cursor: pointer;
 }
 
-.learn-more{
-background-color: black;
-padding: 5px;
-}
 
 .hero-image{
 float: left;
@@ -95,31 +95,89 @@ h4{
 	font-size: 2vw;
 }
 
-/*end hero*/
 
 
-/* start shop home */
-.home-shop{
-display: flex;
-justify-content: center;
-gap: 2vw;
+
+/* featured */
+.featured {
+  background: #3f463a;
+  color: white;
+  text-align: center;
+  padding: 40px;
 }
+
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.featured-grid img {
+  width: 250px;
+  height: 250px;
+
+}
+
+/* why */
+.why {
+  display: flex;
+  padding: 50px;
+  background: #f4f4f4;
+  gap: 40px;
+  align-items: center;
+  color: #3f463a;
+}
+
+.why-copy {
+  flex: 1;
+  margin: 0.5vw;
+}
+
+.why-image {
+  flex: 1;
+}
+
+.why img {
+  width: 100%;
+}
+
+p{
+	padding: 0.5vw;
+}
+
+/* shop home */
 
 .shop-by{
-display: flex;
-align-self: flex-start;
-background-color: salmon;
-justify-content: center;
+  background: #3f463a;
+  color: white;
+  text-align: center;
+  padding: 40px;
 }
 
-.shop-tab{
+.home-shop-row{
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+  margin-bottom: 2vw;
+}
+
+.home-shop-card{
 display: flex;
 background-color: yellowgreen;
-width: 350px;
-height: 450px;
+width: 25vw;
+height: 30vw;
 justify-content: center;
 align-items: flex-end;
 margin: 1vw;
+flex-wrap: wrap;
+}
+
+.home-shop-card img{
+	height: 22vw;
+	width: 22vw;
+
 }
 
 h2{
@@ -128,24 +186,123 @@ h2{
 
 h3{
 	font-size: 2vw;
+	padding: 1vw;
 }
 
-/* end shop home */
 
 /* footer */
-.foot{
+.footer{
 	display: flex;
-	height: 5vw;
-	background-color: lightpink;
+	height: 2vw;
+	background-color: f4f4f4;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+	color: darkgray;
+}
+
+/* about */
+
+.about{
+  display: flex;
+  align-items: center;
+  height: 500px;
+  background-color: #f4f4f4;
+  padding-left: 60px;
+  color: #3f463a;
+
+}
+
+.about-copy{
+float: left;
+width: 50vw;
+padding: 4vw;
+
+}
+
+.about-image{
+float: left;
+background-color: green;
+width: auto;
+height: 20vw;
+padding: 4vw;
+margin: 4vw;
 }
 
 
+/* shop */
 
+.title{
+  color: #3f463a;
+  text-align: center;
+  padding: 40px;
+}
 
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 40px 60px;
+}
 
+.product-card {
+  background: #f8f8f8;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
+.image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background: #fff;
+}
 
+.image img {
+  max-height: 200px;
+}
 
+.price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #3f463a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info h3 {
+  font-size: 18px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.info button {
+  margin-top: auto;
+  padding: 10px;
+  background: #3f463a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 
 
